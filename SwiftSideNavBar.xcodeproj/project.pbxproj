@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FA5674F921E723DE00A9DA8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5674F821E723DE00A9DA8B /* AppDelegate.swift */; };
-		FA5674FB21E723DE00A9DA8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5674FA21E723DE00A9DA8B /* ViewController.swift */; };
 		FA5674FE21E723DE00A9DA8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5674FC21E723DE00A9DA8B /* Main.storyboard */; };
 		FA56750021E723E000A9DA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5674FF21E723E000A9DA8B /* Assets.xcassets */; };
 		FA56750321E723E000A9DA8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA56750121E723E000A9DA8B /* LaunchScreen.storyboard */; };
+		FA56752F21E75B2600A9DA8B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56752E21E75B2600A9DA8B /* MenuTableViewController.swift */; };
+		FA56753121E75B5C00A9DA8B /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56753021E75B5C00A9DA8B /* GreenViewController.swift */; };
+		FA56753321E75B6600A9DA8B /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56753221E75B6600A9DA8B /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA5674F521E723DE00A9DA8B /* SwiftSideNavBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSideNavBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5674F821E723DE00A9DA8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA5674FA21E723DE00A9DA8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA5674FD21E723DE00A9DA8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA5674FF21E723E000A9DA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA56750221E723E000A9DA8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA56750421E723E000A9DA8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA56752E21E75B2600A9DA8B /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		FA56753021E75B5C00A9DA8B /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		FA56753221E75B6600A9DA8B /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				FA5674F821E723DE00A9DA8B /* AppDelegate.swift */,
-				FA5674FA21E723DE00A9DA8B /* ViewController.swift */,
 				FA5674FC21E723DE00A9DA8B /* Main.storyboard */,
 				FA5674FF21E723E000A9DA8B /* Assets.xcassets */,
 				FA56750121E723E000A9DA8B /* LaunchScreen.storyboard */,
 				FA56750421E723E000A9DA8B /* Info.plist */,
+				FA56752E21E75B2600A9DA8B /* MenuTableViewController.swift */,
+				FA56753021E75B5C00A9DA8B /* GreenViewController.swift */,
+				FA56753221E75B6600A9DA8B /* RedViewController.swift */,
 			);
 			path = SwiftSideNavBar;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5674FB21E723DE00A9DA8B /* ViewController.swift in Sources */,
+				FA56753321E75B6600A9DA8B /* RedViewController.swift in Sources */,
+				FA56753121E75B5C00A9DA8B /* GreenViewController.swift in Sources */,
 				FA5674F921E723DE00A9DA8B /* AppDelegate.swift in Sources */,
+				FA56752F21E75B2600A9DA8B /* MenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

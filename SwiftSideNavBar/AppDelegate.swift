@@ -38,7 +38,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         greenNav = UINavigationController(rootViewController: greenViewControllers)
         
+        redViewControllers = storyboard.instantiateViewController(withIdentifier: "RedVC") as! RedViewController
+        redViewControllers.delegate = self
+        
+        redNav = UINavigationController(rootViewController: redViewControllers)
+        
+        
         let menuVC = storyboard.instantiateViewController(withIdentifier: "MenuVC") as! MenuTableViewController
+        menuVC.delegate = self
         menuNav = UINavigationController(rootViewController: menuVC)
         
         sidebarVC = SidebarViewController(leftViewController: menuNav, mainViewController: greenNav, overlap: 70)
@@ -51,9 +58,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
-extension AppDelegate: GreenViewControllerDelegate{
+extension AppDelegate: GreenViewControllerDelegate,RedViewControllerDelegate{
+    func redViewControllerDidTapMenuButton(_ controller: RedViewController) {
+        sidebarVC.toggleLeftAnimated(true)
+    }
+    
     
     func greenViewControllerDidTapMenuButton(_ controller: GreenViewController) {
         sidebarVC.toggleLeftAnimated(true)
     }
+}
+
+extension AppDelegate: MenuTableViewControllerDelegate{
+   
+    func menuTableViewController(_ controller: MenuTableViewController, didSelectRow row: Int) {
+        
+        sidebarVC.closeMenuAnimated(true)
+        
+        var destinationViewController: UIViewController!
+        switch row {
+        case 0:
+            destinationViewController = greenViewControllers
+        case 1:
+            destinationViewController = redViewControllers
+        default:
+            print("implement others")
+        }
+    
+        greenNav.setViewControllers([destinationViewController], animated: true)
+  
+        
+    }
+    
+    
 }

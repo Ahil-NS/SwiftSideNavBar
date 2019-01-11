@@ -86,11 +86,27 @@
                     <view key="view" contentMode="scaleToFill" id="AZj-rm-Nvs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvO-vG-i86">
+                                <rect key="frame" x="159" y="315.5" width="57" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="0.04392927931" blue="0.034437798409999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yvO-vG-i86" firstAttribute="centerY" secondItem="AZj-rm-Nvs" secondAttribute="centerY" id="a3U-uZ-HxY"/>
+                            <constraint firstItem="yvO-vG-i86" firstAttribute="centerX" secondItem="AZj-rm-Nvs" secondAttribute="centerX" id="dka-K9-ur3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x8F-ic-Kgd"/>
                     </view>
                     <navigationItem key="navigationItem" id="YDJ-dc-bjt">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu_ico" id="GIo-IU-rYq"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu_ico" id="GIo-IU-rYq">
+                            <connections>
+                                <action selector="redMenuButtonTapped:" destination="nEm-cB-9vj" id="u9q-GX-jNl"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6EJ-Cl-NJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,7 +120,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQE-eR-x0N">
+                                <rect key="frame" x="139.5" y="315.5" width="96" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.1704764148" green="0.3243227923" blue="0.18478453240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nQE-eR-x0N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A8U-jF-nI4"/>
+                            <constraint firstItem="nQE-eR-x0N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="svs-Fl-ixr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Fl-T5-Y7F">

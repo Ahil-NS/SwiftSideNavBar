@@ -8,12 +8,19 @@
 
 import UIKit
 
+protocol RedViewControllerDelegate: class{
+    func redViewControllerDidTapMenuButton(_ controller: RedViewController)
+}
+
 class RedViewController: UIViewController {
+    weak var delegate: RedViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
 
+    @IBAction func redMenuButtonTapped(_ sender: UIBarButtonItem) {
+        delegate?.redViewControllerDidTapMenuButton(self)
+    }
 }

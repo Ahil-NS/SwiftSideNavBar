@@ -14,6 +14,7 @@
 		FA56752F21E75B2600A9DA8B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56752E21E75B2600A9DA8B /* MenuTableViewController.swift */; };
 		FA56753121E75B5C00A9DA8B /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56753021E75B5C00A9DA8B /* GreenViewController.swift */; };
 		FA56753321E75B6600A9DA8B /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56753221E75B6600A9DA8B /* RedViewController.swift */; };
+		FA56F98821E8BD6E0022A6DE /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA56F98721E8BD6E0022A6DE /* SidebarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FA56752E21E75B2600A9DA8B /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		FA56753021E75B5C00A9DA8B /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		FA56753221E75B6600A9DA8B /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		FA56F98721E8BD6E0022A6DE /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				FA56752E21E75B2600A9DA8B /* MenuTableViewController.swift */,
 				FA56753021E75B5C00A9DA8B /* GreenViewController.swift */,
 				FA56753221E75B6600A9DA8B /* RedViewController.swift */,
+				FA56F98721E8BD6E0022A6DE /* SidebarViewController.swift */,
 			);
 			path = SwiftSideNavBar;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA56F98821E8BD6E0022A6DE /* SidebarViewController.swift in Sources */,
 				FA56753321E75B6600A9DA8B /* RedViewController.swift in Sources */,
 				FA56753121E75B5C00A9DA8B /* GreenViewController.swift in Sources */,
 				FA5674F921E723DE00A9DA8B /* AppDelegate.swift in Sources */,

@@ -22,8 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var sidebarVC: SidebarViewController!
     
-    
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -36,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         greenViewControllers = storyboard.instantiateViewController(withIdentifier: "GreenVC") as! GreenViewController
+        greenViewControllers.delegate = self
     
         greenNav = UINavigationController(rootViewController: greenViewControllers)
         
@@ -51,3 +50,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+
+extension AppDelegate: GreenViewControllerDelegate{
+    
+    func greenViewControllerDidTapMenuButton(_ controller: GreenViewController) {
+        sidebarVC.toggleLeftAnimated(true)
+    }
+}

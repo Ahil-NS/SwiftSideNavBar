@@ -8,13 +8,22 @@
 
 import UIKit
 
-class GreenViewController: UIViewController {
 
+protocol GreenViewControllerDelegate: class{
+    func greenViewControllerDidTapMenuButton(_ controller: GreenViewController)
+}
+
+class GreenViewController: UIViewController {
+    
+    weak var delegate: GreenViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
     }
-
-
+    
+    @IBAction func menuButtonTapped(_ sender: UIBarButtonItem) {
+        delegate?.greenViewControllerDidTapMenuButton(self)
+    }
+    
 }

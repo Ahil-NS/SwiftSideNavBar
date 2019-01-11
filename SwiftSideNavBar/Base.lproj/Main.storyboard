@@ -108,7 +108,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Fl-T5-Y7F">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu_ico" id="mDN-wY-qei"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu_ico" id="mDN-wY-qei">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="BYZ-38-t0r" id="WY4-iT-V5i"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
